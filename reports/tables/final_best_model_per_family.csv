@@ -1,0 +1,6 @@
+family,source,model,reduction_method,n_components,balanced_accuracy,macro_f1,reason
+best_parametric_original,Scenario 2,logistic_regression,none,,0.8846572218723001,0.8699550524770046,
+best_non_parametric_original,Scenario 2,random_forest,none,,0.8921308346119449,0.8923798276902578,
+best_pca_reduced,Scenario 5,logistic_regression,PCA,100,0.8772974589345685,0.8667544890321133,
+best_lda_reduced,Scenario 5,logistic_regression,LDA_projection,10,0.8897652984832582,0.8815384363038743,
+final_recommended_model,Scenario 2 original WAP features,logistic_regression,none,,0.8846572218723001,0.8699550524770046,within 0.03 balanced_accuracy of the best Scenario 2 model and most explainable

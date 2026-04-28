@@ -1,0 +1,3 @@
+split,total_wap_cells,nan_cells,sentinel_100_cells,sentinel_100_pct
+train,10367240,0,10008477,96.5394550526466
+validation,577720,0,559416,96.83168316831683

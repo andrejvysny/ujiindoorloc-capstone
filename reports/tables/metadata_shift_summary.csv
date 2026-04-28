@@ -1,0 +1,12 @@
+metric,train,validation
+USERID_unique,18,1
+USERID_only_in_train,18,0
+USERID_only_in_validation,0,1
+PHONEID_unique,16,11
+PHONEID_only_in_train,14,0
+PHONEID_only_in_validation,0,9
+SPACEID_unique,123,1
+SPACEID_only_in_train,123,0
+SPACEID_only_in_validation,0,1
+TIMESTAMP_min,1369908924,1379578367
+TIMESTAMP_max,1371737745,1381247836

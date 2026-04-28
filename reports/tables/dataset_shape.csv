@@ -1,0 +1,3 @@
+split,rows,columns,wap_columns,metadata_columns,duplicated_rows,nan_cells
+train,19937,530,520,7,637,0
+validation,1111,530,520,7,0,0

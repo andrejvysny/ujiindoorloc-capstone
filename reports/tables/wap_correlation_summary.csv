@@ -1,0 +1,10 @@
+metric,value
+n_features_after_constant_filter,465.0
+n_pairs,216225.0
+mean_abs_corr,0.040321826070251976
+median_abs_corr,0.01105776196179489
+p95_abs_corr,0.14683231531031893
+p99_abs_corr,0.6187618953699267
+pairs_above_0.5,1453.0
+pairs_above_0.7,765.0
+pairs_above_0.8,366.0

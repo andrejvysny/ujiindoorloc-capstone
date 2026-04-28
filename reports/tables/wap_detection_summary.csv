@@ -1,0 +1,17 @@
+metric,value,split
+rows,19937.0,train
+mean_detected_per_row,17.994833726237648,train
+median_detected_per_row,17.0,train
+min_detected_per_row,0.0,train
+max_detected_per_row,51.0,train
+rows_with_zero_detected,76.0,train
+pct_detected_overall,3.4605449473533936,train
+pct_sentinel_overall,96.5394550526466,train
+rows,1111.0,validation
+mean_detected_per_row,16.475247524752476,validation
+median_detected_per_row,15.0,validation
+min_detected_per_row,1.0,validation
+max_detected_per_row,35.0,validation
+rows_with_zero_detected,0.0,validation
+pct_detected_overall,3.1683168316831685,validation
+pct_sentinel_overall,96.83168316831683,validation

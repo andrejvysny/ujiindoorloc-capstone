@@ -1,0 +1,8 @@
+metric,value
+total_wap_columns,520
+seen_in_train,465
+never_seen_in_train,55
+seen_in_validation,367
+seen_in_both,312
+only_in_train,153
+only_in_validation,55

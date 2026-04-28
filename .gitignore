@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+*.egg-info/
+dist/
+build/
+.uv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# keep raw data; ignore processed cache + models
+data/processed/*
+!data/processed/.gitkeep
+models/*
+!models/.gitkeep

@@ -1,0 +1,5 @@
+approach,input_features,model,n_features_or_components,balanced_accuracy,macro_f1,explainability,recommendation
+Original WAP features,~465 WAPs,logistic_regression,~465 WAPs,0.8846572218723001,0.8699550524770046,high,safe baseline
+Original WAP features,~465 WAPs,random_forest,~465 WAPs,0.8921308346119449,0.8923798276902578,medium,best performance candidate
+PCA components,compressed PCs,logistic_regression,100 PCs,0.8772974589345685,0.8667544890321133,lower,good compression
+LDA projection,supervised LDs,logistic_regression,10 LDs,0.8897652984832582,0.8815384363038743,medium,supervised DR
