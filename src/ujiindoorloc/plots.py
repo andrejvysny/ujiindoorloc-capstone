@@ -254,8 +254,8 @@ def plot_gps_scatter(
         df = df.sample(n=sample, random_state=0)
     fig, ax = plt.subplots(figsize=(8, 6))
     sns.scatterplot(
-        data=df.assign(_c=df[color_col].astype(str)),
-        x="LONGITUDE", y="LATITUDE", hue="_c",
+        data=df,
+        x="LONGITUDE", y="LATITUDE", hue=df[color_col].astype(str),
         s=s, alpha=alpha, linewidth=0, ax=ax,
     )
     ax.set_aspect("equal", adjustable="datalim")
@@ -284,9 +284,9 @@ def plot_gps_facet_by_building(
     if len(buildings) == 1:
         axes = [axes]
     for ax, b in zip(axes, buildings):
-        sub = df[df["BUILDINGID"] == b].assign(_c=df[color_col].astype(str))
+        sub = df[df["BUILDINGID"] == b]
         sns.scatterplot(
-            data=sub, x="LONGITUDE", y="LATITUDE", hue="_c",
+            data=sub, x="LONGITUDE", y="LATITUDE", hue=sub[color_col].astype(str),
             s=s, alpha=alpha, linewidth=0, ax=ax, legend=(ax is axes[-1]),
         )
         ax.set_aspect("equal", adjustable="datalim")

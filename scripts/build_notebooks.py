@@ -186,8 +186,8 @@ nb01 = [
     train, valid = raw.train, raw.valid
 
     # Per-row "# WAPs detected" — handy as a colour for the GPS scatter in §9.
-    train = train.assign(detected_waps=eda.detected_per_row(train).values)
-    valid = valid.assign(detected_waps=eda.detected_per_row(valid).values)
+    train["detected_waps"] = eda.detected_per_row(train).values
+    valid["detected_waps"] = eda.detected_per_row(valid).values
 
     print("Train:", train.shape, "  Validation:", valid.shape)
     """),
@@ -217,8 +217,10 @@ nb01 = [
     """),
     md("## 3. WAP signal — per-row detection"),
     code("""
-    det_train = eda.summarize_wap_detection(train).assign(split="train")
-    det_valid = eda.summarize_wap_detection(valid).assign(split="validation")
+    det_train = eda.summarize_wap_detection(train)
+    det_train["split"] = "train"
+    det_valid = eda.summarize_wap_detection(valid)
+    det_valid["split"] = "validation"
     det_df = pd.concat([det_train, det_valid], ignore_index=True)
     save_table(det_df, "wap_detection_summary.csv")
     det_df
